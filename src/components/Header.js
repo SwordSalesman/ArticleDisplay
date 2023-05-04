@@ -5,8 +5,7 @@ function Header({ headline, source, byline, date }) {
   const d = new Date(date);
   const formattedDate = d.getDate()
     ? [
-        d.toDateString().slice(0, 3) + ",",
-        d.toDateString().slice(3),
+        d.toDateString().slice(0, 3) + "," + d.toDateString().slice(3),
         d.toLocaleTimeString(),
       ].join(" ")
     : "Unknown Date";

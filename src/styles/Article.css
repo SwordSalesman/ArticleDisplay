@@ -68,6 +68,12 @@
   width: 100%;
 }
 
+.image-loader {
+  width: 20%;
+  opacity: 20%;
+  margin: auto;
+}
+
 .QuoteBlock {
   width: 70%;
 
