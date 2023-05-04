@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Hosted Address
 
-The project is hosted at:
+The project is hosted at: https://swordsalesman.github.io/ArticleDisplay/
 
 ## Running Locally
 

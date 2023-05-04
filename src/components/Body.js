@@ -2,12 +2,17 @@ import "../styles/Article.css";
 
 import ImageBlock from "./ImageBlock";
 import QuoteBlock from "./QuoteBlock";
+import FormattedText from "./FormattedText";
 
 function Body({ blocks }) {
   const renderedBlocks = blocks.map((b) => {
     switch (b.kind) {
       case "text":
-        return <p className="text-block">{b.text}</p>;
+        return (
+          <p className="text-block">
+            <FormattedText intentions={b.intentions}>{b.text}</FormattedText>
+          </p>
+        );
       case "image":
         return <ImageBlock url={b.url}>{b.captionText}</ImageBlock>;
       case "pull-quote":
